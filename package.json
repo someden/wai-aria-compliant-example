@@ -1,0 +1,7 @@
+{
+  "name": "wai-aria-compliant-example",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "Denis Efremov <someden@ya.ru>",
+  "license": "MIT"
+}

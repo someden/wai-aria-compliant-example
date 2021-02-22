@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Государственный музей изобразительных искусств имени А. С. Пушкина</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <link rel="stylesheet" href="index.css?v=2">
+</head>
+<body>
+  <section>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="header-item logo">
+          <img src="images/logo.png" alt="Логотип государственного музея изобразительных искусств имени А. С. Пушкина">
+        </div>
+
+        <div class="header-item">
+          <a class="button skip-to-main" href="#main">Пролистать до главного</a>
+        </div>
+
+        <form class="header-item search" action="/search" role="search" aria-label="Поиск по сайту">
+          <label>
+            <span class="vh">Поисковый запрос</span>
+            <input class="search-input" type="search" required />
+          </label>
+          <button class="button-link search-button" type="submit" aria-label="Найти">
+            <svg aria-hidden="true" class="icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+          </button>
+        </form>
+
+        <nav class="header-item language-nav" aria-label="Выбор языка">
+          <span class="button" href="/ru">RU</span>
+          <a class="button underline" href="/EN" hreflang="en" aria-label="English version">EN</a>
+        </nav>
+
+        <div class="header-item account">
+          <button class="button-link p-0 d-block js-open-modal" type="button" aria-label="Войти в личный кабинет">
+            <svg aria-hidden="true" class="icon icon-xl" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"></path></svg>
+          </button>
+        </div>
+      </header>
+
+      <nav class="main-nav" role="navigation" aria-label="Навигация">
+        <a class="main-nav-link main-nav-link" href="/museum">Музей</a>
+        <a class="main-nav-link main-nav-link" href="/for-visitors">Посетителям</a>
+        <a class="main-nav-link main-nav-link" href="/events">Выставки и события</a>
+      </nav>
+
+      <div class="slider">
+        <button class="button-link prev-slider-button js-prev-slide" type="button" aria-label="Предыдущий слайд">
+          <svg class="icon icon-xl" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+        </button>
+
+        <div class="slides js-slides">
+          <div class="slide js-slide">
+            <img src="images/slide1.jpg" alt="Афиша выставки «От Дюрера до Матисса»">
+            <div class="slide-content">
+              <a class="button button-secondary" href="/tickets">
+                Купить билет <span class="vh">на выставку «От Дюрера до Матисса», выставка проходит до 1 ноября</span>
+              </a>
+            </div>
+          </div>
+          <div class="slide js-slide hidden">
+            <img src="images/slide2.jpg" alt="Афиша выставки «Тату»">
+            <div class="slide-content">
+              <a class="button button-secondary" href="/tickets">
+                Купить билет <span class="vh">на выставку «Тату», выставка проходит до 27 сентября</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button class="button-link next-slider-button js-next-slide" type="button" aria-label="Следующий слайд">
+          <svg class="icon icon-xl" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+        </button>
+      </div>
+
+      <nav class="second-nav" role="navigation" aria-label="Навигация">
+        <a class="second-nav-link button button-secondary" href="/tickets">Купить билет</a>
+        <a class="second-nav-link button button-secondary" href="/become-a-friend">Стать другом</a>
+        <a class="second-nav-link button button-secondary" href="/shop">Онлайн-магазин</a>
+      </nav>
+
+      <main id="main">
+        <h1 class="vh">Государственный музей изобразительных искусств имени А. С. Пушкина</h1>
+
+        <section class="main-section">
+          <h2>Выставки и события</h2>
+          <input class="vh" type="radio" name="events" value="all" id="events-all" role="tab" aria-controls="events" aria-labelledby="events-all-label" checked>
+          <label class="label-button" for="events-all" id="events-all-label" aria-hidden="true">
+            Все
+          </label>
+          <input class="vh" type="radio" name="events" value="today" id="events-today" role="tab" aria-controls="events" aria-labelledby="events-today-label">
+          <label class="label-button" for="events-today" id="events-today-label" aria-hidden="true">
+            Сегодня
+          </label>
+          <input class="vh" type="radio" name="events" value="tomorrow" id="events-tomorrow" role="tab" aria-controls="events" aria-labelledby="events-tomorrow-label">
+          <label class="label-button" for="events-tomorrow" id="events-tomorrow-label" aria-hidden="true">
+            Завтра
+          </label>
+
+          <div id="events" class="tabs-content articles">
+            <article class="article all today">
+              <img src="images/event1.jpg" alt="Картина Святослава Рихтера «Человек и зелень»">
+              <h3 id="event-1-title">Святослав Рихтер в кругу друзей. Москва — Коктебель</h3>
+              <p class="lead">Выставка до 20 ноября</p>
+              <p>Текст о музее и о выставке Святослав Рихтер в кругу друзей, которая будет проходить в  Москве до 20 ноября</p>
+              <a href="/buy-ticket" aria-describedby="event-1-title">Купить билет</a>
+            </article>
+            <article class="article all tomorrow">
+              <img src="images/event2.jpg" alt="Афиша выставки «Тату»">
+              <h3 id="event-2-title">Тату</h3>
+              <p class="lead">Выставка до 27 сентября</p>
+              <p>Текст о музее и о выставке Тату, которая будет проходить в Москве до 27 ноября</p>
+              <a href="/buy-ticket" aria-describedby="event-2-title">Купить билет</a>
+            </article>
+            <article class="article all tomorrow">
+              <img src="images/event3.jpg" alt="Эскиз Дюрера">
+              <h3 id="event-3-title">От Дюрера до Матисса. Избранные рисунки из собрания ГМИИ им. А.С. Пушкина</h3>
+              <p class="lead">Выставка до 1 ноября</p>
+              <p>Текст о музее и о выставке от Дюрера до Матисса, избранные рисунки из собрания ГМИИ им. А.С. Пушкина, которая будет проходить в Москве до 1 ноября</p>
+              <a href="/buy-ticket" aria-describedby="event-3-title">Купить билет</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="main-section">
+          <h2>Музей</h2>
+          <input class="vh" type="radio" name="museums" value="buildings" id="museums-buildings" role="tab" aria-controls="museums" aria-labelledby="museums-buildings-label" checked>
+          <label class="label-button" for="museums-buildings" id="museums-buildings-label" aria-hidden="true">
+            Здания
+          </label>
+          <input class="vh" type="radio" name="museums" value="history" id="museums-history" role="tab" aria-controls="museums" aria-labelledby="museums-history-label">
+          <label class="label-button" for="museums-history" id="museums-history-label" aria-hidden="true">
+            История
+          </label>
+
+          <div class="tabs-content" id="museums">
+            <div class="articles buildings">
+              <article class="article">
+                <img src="images/museum1.jpg" alt="Чертеж мемориальной квартиры Рихтера">
+                <h3 class="uppercase"><a href="/museum1">Мемориальная квартира С. Т. Рихтера</a></h3>
+                <address>ул. Большая Бронная, 2/6, 16 этаж, кв. 58</address>
+              </article>
+              <article class="article">
+                <img src="images/museum2.jpg" alt="Чертеж ЦЭВ «Мусейон»">
+                <h3 class="uppercase"><a href="/museum2">ЦЭВ «Мусейон»</a></h3>
+                <address>Колымажный пер., 6/2, 3 (вход с Малого Знаменского переулка)</address>
+              </article>
+              <article class="article">
+                <img src="images/museum3.jpg" alt="Чертеж усадьбы Лопухиных">
+                <h3 class="uppercase"><a href="/museum3">Усадьба Лопухиных</a></h3>
+                <address>Малый Знаменский пер., 3/5с4</address>
+              </article>
+              <article class="article">
+                <img src="images/museum4.jpg" alt="Чертеж учебного музея">
+                <h3 class="uppercase"><a href="/museum4">Учебный музей</a></h3>
+                <address>ул. Чаянова, 15</address>
+              </article>
+              <article class="article">
+                <img src="images/museum5.jpg" alt="Чертеж отдела личных коллекций">
+                <h3 class="uppercase"><a href="/museum5">Отдел личных коллекций</a></h3>
+                <address>ул. Волхонка, 10</address>
+              </article>
+              <article class="article">
+                <img src="images/museum6.jpg" alt="Чертеж галереи">
+                <h3 class="uppercase"><a href="/museum6">Галерея</a></h3>
+                <address>ул. Волхонка, 14</address>
+              </article>
+            </div>
+            <div class="history">
+              <p class="lead">Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших в России художественных собраний зарубежного искусства с древнейших времен до наших дней.</p>
+              <p class="lead">В современной экспозиции представлены обширная учебная коллекция тонированных гипсовых слепков с произведений Античности, Средних веков и эпохи Возрождения, а также собрание подлинных произведений живописи, скульптуры, графики и декоративно-прикладного искусства.</p>
+              <p class="lead">В залах первого этажа Главного здания представлены: произведения искусства Древнего Египта, Античности, собрание европейской живописи VIII–XVIII веков; два зала – Итальянский и Греческий дворики – занимают слепки. На втором этаже Главного здания в залах размещены слепки произведений искусства Древней Греции, Рима, Средних веков и Возрождения.</p>
+              <p class="lead">В начале 2017 года музей определил новое направление своей деятельности – Пушкинский XXI, – ориентированное на современное российское и западное искусство во всех аспектах – выставочном, образовательном и исследовательском. Таким образом, ГМИИ им. А.С. Пушкина представляет собой открытую, интерактивную сцену, демонстрирующую развитие мировой культуры с древности до наших дней, живое, знакомое с детства пространство для получения знаний и общения.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-section">
+          <h2>Онлайн-трансляции</h2>
+          <iframe class="video" width="1000" height="562" src="https://www.youtube.com/embed/5qRR-5H1XgU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="main-section">
+          <h2>Экскурсии и лекции в прямом эфире</h2>
+          <p class="lead">С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых и детей, оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom; предусмотрен формат живого общения с возможностью задавать вопросы экскурсоводу (лектору). <a href="/about-online">Подробнее</a>.</p>
+          <p class="lead">Мы будем благодарны за любое <a href="/donations">пожертвование</a>. Все поступившие средства будут направлены на организацию онлайн-проектов для наших посетителей.</p>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="page-wrapper">
+        <div class="footer-container">
+          <div class="footer-column">
+            <nav class="footer-nav" role="navigation" aria-label="Навигация">
+              <a class="footer-nav-link" href="/for-visitors-with-disabilities">Посетителям с ограниченными возможностями</a>
+              <a class="footer-nav-link" href="/tickets-and-benefits">Билеты и льготы</a>
+              <a class="footer-nav-link" href="/anti-corruption">Противодействие коррупции</a>
+            </nav>
+            <section>
+              <header class="footer-title">Соц. сети</header>
+              <nav class="footer-social-nav">
+                <a class="footer-social-nav-link icon-round-wrapper" href="mailto:museum@museum.ru" aria-label="Электронная почта музея">
+                  <svg aria-hidden="true" class="icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                </a>
+                <a class="footer-social-nav-link icon-round-wrapper" href="/tg" aria-label="Телеграм музея">
+                  <svg aria-hidden="true" class="icon" focusable="false"role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>
+                </a>
+                <a class="footer-social-nav-link icon-round-wrapper" href="/fb" aria-label="Фейсбук музея">
+                  <svg aria-hidden="true" class="icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                </a>
+              </nav>
+            </section>
+          </div>
+          <div class="footer-column">
+            <section>
+              <header class="footer-title" id="subscription-header" aria-hidden="true">Подписка на новости</header>
+              <form action="/subscription" aria-labelledby="subscription-header">
+                <div class="subscription-form-container">
+                  <div class="subscription-form-column">
+                    <label class="subscription-form-field">
+                      <span class="vh">Электронная почта</span>
+                      <input class="subscription-input" type="email" placeholder="E-mail" required />
+                    </label>
+                    <label class="subscription-form-field">
+                      <input type="checkbox" /> Согласен на обработку персональх данных
+                    </label>
+                  </div>
+                  <div class="subscription-form-column">
+                    <button type="submit" class="button-secondary">Подписаться</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal hidden" role="dialog" id="login-modal" aria-modal="true">
+      <section class="modal-content">
+        <div class="modal-body" id="login-modal-content">
+          <form class="login-form" action="/login">
+            <h2 class="login-form-title">Вход</h2>
+            <label class="login-form-field">
+              <span class="vh">Логин</span>
+              <input class="login-form-input" type="text" placeholder="Логин" required />
+            </label>
+            <label class="login-form-field">
+              <span class="vh">Пароль</span>
+              <input class="login-form-input" type="password" placeholder="Пароль" required />
+            </label>
+            <button class="login-form-field" type="submit">Вход</button>
+            <button class="button-link login-form-field js-close-modal" type="reset">Закрыть</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/tabbable/dist/index.umd.js"></script>
+  <script src="https://unpkg.com/focus-trap/dist/focus-trap.umd.js"></script>
+  <script src="index.js?v=2"></script>
+</body>
+</html>
